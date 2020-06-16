@@ -12,6 +12,9 @@
 1. А есть ли такие объявления, по которым сначала произошел клик, а только потом показ?
 
 
+(Структура таблицы есть в файле data_schema.png)
+
+
 **Решения:**
 
 1.
@@ -21,7 +24,7 @@ select date, count(event) count_events, countIf(event='view') count_views, count
 
 2.
 
-Было запущены популярное объявление 112583
+Было запущено популярное объявление 112583
 
 ```
 select date, ad_id, count(ad_id) cnt from ads_data
